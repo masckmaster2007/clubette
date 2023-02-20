@@ -10,12 +10,19 @@ Then click convert and u have a "sample"
 
 # THE PAYLOADS
 1st january - fun with windows (changes window transparency - cmd/regedit/ie/explorer)
+
 6th february - spam taskill + start explorer & canadian eas
+
 25th june - Crappy fred durst message (can't do anything + lags pc)
+
 1st september - BACKFLIP VIDEO FULL SCREEN LOOP
+
 11th september - changes bg to 9-11
+
 1st october - changes start page to a website opens iexplore & spams lol tts
+
 14th december - popups (click = bsod)
+
 31st december - fun
 
 ![image](image-3.png)

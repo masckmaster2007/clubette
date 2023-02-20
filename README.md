@@ -17,3 +17,7 @@ Then click convert and u have a "sample"
 1st october - changes start page to a website opens iexplore & spams lol tts
 14th december - popups (click = bsod)
 31st december - fun
+
+![image](image-3.png)
+![image](image-2.png)
+![image](image-1.png)

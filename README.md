@@ -1,4 +1,4 @@
-# trojan.win32.clubette
+# Maestro Trojan (aka trojan.win32.clubette)
 trojan virus, not the waifu please end my life
 
 # READ THIS LINE OF TEXT OR DIE

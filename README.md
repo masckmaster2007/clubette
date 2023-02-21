@@ -1,6 +1,9 @@
 # trojan.win32.clubette
 trojan virus, not the waifu please end my life
 
+# READ THIS LINE OF TEXT OR DIE
+Yes I made this, but if you decide to use it maliciously, it's YOUR PROBLEM
+
 # Building this
 You'll need Bat2Exe to convert it into a full exe
 LINK: https://www.majorgeeks.com/files/details/bat_to_exe_converter.html

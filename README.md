@@ -1,8 +1,11 @@
 # Maestro Trojan (aka trojan.win32.clubette)
 trojan virus, not the waifu please end my life
+Made using VBS and Batch
 
 # READ THIS LINE OF TEXT OR DIE
 Yes I made this, but if you decide to use it maliciously, it's YOUR PROBLEM
+I HOPE YOU DIDN'T SHARE THIS TO YOUR HORNY FRIEND BECAUSE HE'S NOT GONNA WANT TO BE YOUR FRIEND ANYMORE
+Please, RUN THIS UNDER A VIRTUAL MACHINE : https://virtualbox.org
 
 # Building this
 You'll need Bat2Exe to convert it into a full exe
@@ -24,10 +27,11 @@ Then click convert and u have a "sample"
 
 1st october - changes start page to a website opens iexplore & spams lol tts
 
-14th december - popups (click = bsod)
+14th december - popups (click = MBR OVERWRITE + BSOD)
 
 31st december - fun
 
 ![image](image-3.png)
 ![image](image-2.png)
 ![image](image.png)
+![image](image-4.png)

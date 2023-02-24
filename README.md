@@ -1,3 +1,5 @@
+![image](maestro.png)
+
 # Maestro Trojan (aka trojan.win32.clubette)
 trojan virus, not the waifu please end my life
 Made using VBS and Batch

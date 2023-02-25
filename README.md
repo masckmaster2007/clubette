@@ -1,3 +1,6 @@
+# Note
+Will soon drop support for systems that use Windows 8.1 and earlier (the custom BSOD does not work in these versions)
+
 ![image](maestro.png)
 
 # Maestro Trojan (aka trojan.win32.clubette)
@@ -6,7 +9,9 @@ Made using VBS and Batch
 
 # READ THIS LINE OF TEXT OR DIE
 Yes I made this, but if you decide to use it maliciously, it's YOUR PROBLEM
-I HOPE YOU DIDN'T SHARE THIS TO YOUR HORNY FRIEND BECAUSE HE'S NOT GONNA WANT TO BE YOUR FRIEND ANYMORE
+
+I HOPE YOU DIDN'T SHARE THIS TO YOUR HORNY FRIEND, YOUR LITTLE BROTHER, PUTIN, OR ANYONE ELSE WITHOUT EXPLICITLY LETTING THEM KNOW THIS CAN DAMAGE YOUR COMPUTER
+
 Please, RUN THIS UNDER A VIRTUAL MACHINE : https://virtualbox.org
 
 # Building this

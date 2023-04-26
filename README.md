@@ -1,14 +1,14 @@
 # Note
-Will soon drop support for systems that use Windows 8.1 and earlier (the custom BSOD does not work in these versions)
+I am still alive
 
 ![image](maestro.png)
 
 # Maestro Trojan (aka trojan.win32.clubette)
-trojan virus, not the waifu please end my life
+trojan virus based off your popular gd mascot x)
 Made using VBS and Batch
 
 # READ THIS LINE OF TEXT OR DIE
-Yes I made this, but if you decide to use it maliciously, it's YOUR PROBLEM
+Yes I made this, but if you decide to use it maliciously, I am not responsible
 
 I HOPE YOU DIDN'T SHARE THIS TO YOUR HORNY FRIEND, YOUR LITTLE BROTHER, PUTIN, OR ANYONE ELSE WITHOUT EXPLICITLY LETTING THEM KNOW THIS CAN DAMAGE YOUR COMPUTER
 
